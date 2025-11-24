@@ -122,6 +122,13 @@ payload:
   - DOMAIN-SUFFIX,rwww.bing.com
 
   # --- Google Gemini ---
+  # Google Gemini 补充规则
+- DOMAIN-SUFFIX,notebooklm.google.com
+- DOMAIN-SUFFIX,gemini.google.com
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com
+- PROCESS-NAME,com.google.android.apps.bard  # Android Gemini 应用
+- IP-CIDR,142.250.0.0/15,no-resolve  # Google IP 段
+- IP-CIDR,172.217.0.0/16,no-resolve
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
   - DOMAIN-KEYWORD,generativelanguage
