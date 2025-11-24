@@ -1,16 +1,25 @@
 payload:
   # ============================================
-  # 3rd part AI router (AI 服务)
+  # 🟢 [新增/修复] Perplexity 及其必要依赖
+  # 这些域名如果漏掉，会导致网页加载不出来或卡 socket
   # ============================================
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,pplx.ai
+  - DOMAIN-SUFFIX,pusher.com        # 实时流传输 (关键)
+  - DOMAIN-SUFFIX,statsig.com       # 功能开关 (关键)
+  - DOMAIN-SUFFIX,auth0.com         # 登录验证 (关键)
+  - DOMAIN-SUFFIX,challenges.cloudflare.com # CF 验证 (关键)
+  - DOMAIN-SUFFIX,sentry.io         # 错误日志
+  - DOMAIN-SUFFIX,stripe.com        # 支付网关(可选)
 
-  # --- Cerebras ---
+  # ============================================
+  # 3rd part AI router (其他 AI 服务)
+  # ============================================
   - DOMAIN-SUFFIX,cerebras.ai
 
   # --- OpenAI / ChatGPT ---
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,chatgpt
-  - DOMAIN-SUFFIX,auth0.com
-  - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,client-api.arkoselabs.com
   - DOMAIN-SUFFIX,events.statsigapi.net
   - DOMAIN-SUFFIX,featuregates.org
@@ -19,7 +28,6 @@ payload:
   - DOMAIN-SUFFIX,intercomcdn.com
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-  - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,chatgpt.com
 
   # --- Claude ---
@@ -45,9 +53,6 @@ payload:
   - DOMAIN-KEYWORD,grok
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
-
-  # --- Perplexity ---
-  - DOMAIN-SUFFIX,perplexity.ai
 
   # --- Bing / Copilot ---
   - DOMAIN-KEYWORD,bing
@@ -151,7 +156,7 @@ payload:
   - DOMAIN-SUFFIX,clients6.google.com
 
   # ============================================
-  # Google General (基础服务，已剔除油管和FCM)
+  # Google General (纯净版，无YT/FCM)
   # ============================================
   - DOMAIN-KEYWORD,gmail
   - DOMAIN-KEYWORD,google
@@ -171,12 +176,12 @@ payload:
   - DOMAIN-SUFFIX,gvt3.com
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   
-  # Google IPs (保留用于搜索和云盘等服务)
+  # Google IPs
   - IP-CIDR,74.125.0.0/16,no-resolve
   - IP-CIDR,173.194.0.0/16,no-resolve
 
   # ============================================
-  # Google CN (基础服务)
+  # Google CN (纯净版)
   # ============================================
   - DOMAIN-SUFFIX,265.com
   - DOMAIN-SUFFIX,app-measurement.com
