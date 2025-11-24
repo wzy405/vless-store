@@ -1,18 +1,5 @@
 payload:
   # ============================================
-  # 🟢 [新增/修复] Perplexity 及其必要依赖
-  # 这些域名如果漏掉，会导致网页加载不出来或卡 socket
-  # ============================================
-  - DOMAIN-SUFFIX,perplexity.ai
-  - DOMAIN-SUFFIX,pplx.ai
-  - DOMAIN-SUFFIX,pusher.com        # 实时流传输 (关键)
-  - DOMAIN-SUFFIX,statsig.com       # 功能开关 (关键)
-  - DOMAIN-SUFFIX,auth0.com         # 登录验证 (关键)
-  - DOMAIN-SUFFIX,challenges.cloudflare.com # CF 验证 (关键)
-  - DOMAIN-SUFFIX,sentry.io         # 错误日志
-  - DOMAIN-SUFFIX,stripe.com        # 支付网关(可选)
-
-  # ============================================
   # 3rd part AI router (其他 AI 服务)
   # ============================================
   - DOMAIN-SUFFIX,cerebras.ai
