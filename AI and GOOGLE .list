@@ -4,6 +4,11 @@ payload:
   # ============================================
   - DOMAIN-SUFFIX,cerebras.ai
 
+  # Perplexity 相关域名，强制定向到 AI and GOOGLE
+  - DOMAIN-SUFFIX,perplexity.ai,AI and GOOGLE
+  - DOMAIN-SUFFIX,perplexity.app,AI and GOOGLE
+  - DOMAIN-SUFFIX,mapbox.com,AI and GOOGLE
+
   # --- OpenAI / ChatGPT ---
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,chatgpt
@@ -123,12 +128,12 @@ payload:
 
   # --- Google Gemini ---
   # Google Gemini 补充规则
-- DOMAIN-SUFFIX,notebooklm.google.com
-- DOMAIN-SUFFIX,gemini.google.com
-- DOMAIN-SUFFIX,generativelanguage.googleapis.com
-- PROCESS-NAME,com.google.android.apps.bard  # Android Gemini 应用
-- IP-CIDR,142.250.0.0/15,no-resolve  # Google IP 段
-- IP-CIDR,172.217.0.0/16,no-resolve
+  - DOMAIN-SUFFIX,notebooklm.google.com
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - PROCESS-NAME,com.google.android.apps.bard  # Android Gemini 应用
+  - IP-CIDR,142.250.0.0/15,no-resolve  # Google IP 段
+  - IP-CIDR,172.217.0.0/16,no-resolve
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
   - DOMAIN-KEYWORD,generativelanguage
