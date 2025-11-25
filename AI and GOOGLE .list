@@ -3,11 +3,10 @@ payload:
   # 3rd part AI router (其他 AI 服务)
   # ============================================
   - DOMAIN-SUFFIX,cerebras.ai
-
-  # Perplexity 相关域名，强制定向到 AI and GOOGLE
-  - DOMAIN-SUFFIX,perplexity.ai,AI and GOOGLE
-  - DOMAIN-SUFFIX,perplexity.app,AI and GOOGLE
-  - DOMAIN-SUFFIX,mapbox.com,AI and GOOGLE
+#perplexity
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,perplexity.app
+  - DOMAIN-SUFFIX,mapbox.com
 
   # --- OpenAI / ChatGPT ---
   - DOMAIN-KEYWORD,openai
