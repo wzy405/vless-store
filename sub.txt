@@ -1,2 +1,1 @@
-vless://8f018e82-3225-40d7-89f8-1861a5659e06@104.168.43.139:35064/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=apple.com&fp=chrome&security=reality&pbk=wYHK6QbVEFVQ_qwTvYav3M86gy1gkpn0w8Y8dR-7wX0&sid=d39af0d0#vl-reality-vision-racknerd-be6bcde
-hy2://8f018e82-3225-40d7-89f8-1861a5659e06@104.168.43.139:46579/?insecure=1&sni=www.bing.com#hy2-racknerd-be6bcde
+
